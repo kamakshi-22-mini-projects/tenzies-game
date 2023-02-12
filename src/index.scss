@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5d6;
+  padding: 5px;
+  font-family: 'Karla', sans-serif;
+  
+}
+
+main {
+  background-color: #0B2434;
+  height: 80vh;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+
+  .title {
+    font-size: 40px;
+    margin: 0;
+    color: white;
+  }
+
+  .instructions {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      margin-top: 0;
+      text-align: center;
+      color: white;
+  }
+
+  .dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+
+    .die-face {
+      height: 50px;
+      width: 50px;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .die-num {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+  }
+
+  .roll-dice {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    color: #0b2434;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: rgb(159, 15, 15);
+    }
+
+    &:active {
+      background-color: rgb(159, 15, 15);
+    }
+
+  }
+}
+
